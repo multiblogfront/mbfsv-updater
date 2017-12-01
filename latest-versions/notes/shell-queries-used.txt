@@ -1,0 +1,16 @@
+# These are shell commands that might be used _by_ this package
+# to retrieve necessary information. This package is _not_ used
+# in their implementation - but their presence is relied upon
+# by this package:
+
+git rev-parse HEAD
+# This retrieves the current _local_ revision-ID of the GIT
+# package that we are on. This information is needed in order
+# to "bless" a Special Version - and may be needed for other
+# purposes as well.
+
+git rev-parse --abbrev-ref HEAD
+# This retrieves the branch ID that the local repository is
+# on. It is needed so that any upgrading that goes on can be
+# kept on-branch.
+

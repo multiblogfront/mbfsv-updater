@@ -14,3 +14,7 @@ git rev-parse --abbrev-ref HEAD
 # on. It is needed so that any upgrading that goes on can be
 # kept on-branch.
 
+git remote get-url origin
+# This identifies the URL of the 'origin' remote repo.
+
+

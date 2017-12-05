@@ -1,5 +1,5 @@
 # USAGE:
-#   perl <this-script> <repo> <branch>
+#   perl <this-script> [-repo <repository>] [-brnc <branch>]
 # FUNCTION:
 #   Retrieves the laest version of "special-versions.dat" from the repo.
 #   All other files (if any) in the same directory as this script are

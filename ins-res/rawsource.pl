@@ -19,6 +19,6 @@ sub countor {
 }
 
 
-exec('perl',("{{localo}}/md-" . $chosen . '/main.pl'),@argex);
+exec('perl',("-I{{localo}}/lib"),("{{localo}}/md-" . $chosen . '/main.pl'),@argex);
 
 

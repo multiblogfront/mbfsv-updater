@@ -200,7 +200,7 @@ if ( ! ( -d $my_tmp_dir_gl ) )
   $lc_cm = 'cd ' . &bsc($my_tmp_dir_gl);
   $lc_cm .= ' && git rev-parse HEAD';
   $lc_ret = `$lc_cm`; chomp($lc_ret);
-  print('current:' . $lc_ret . "\n");
+  print('current:' . time() . ':' . $lc_ret . "\n");
 }
 
 # And now we clean-up. (The retero-cleaning is a plan B, not a plan A.)
